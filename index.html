@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="zzplus.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="html2canvas.min.js"></script>
+    <script src="zzplus.js"></script>
+    <title>FGO助战签名图半自动生成器——盗计时</title>
+</head>
+<body>
+    <div class="fgo">
+        <div class="fgo-img">
+            <div class="fgo-img-in">
+                <img class="icon" src="icon.png">
+                <div contenteditable="true" class="level"><p>100</p></div>
+                <div contenteditable="true" class="text"><p>1</p></div>
+            </div>
+            <div class="fgo-img-in">
+                <img class="icon" src="icon.png">
+                <div contenteditable="true" class="level"><p>100</p></div>
+                <div contenteditable="true" class="text"><p>1</p></div>
+            </div>
+            <div class="fgo-img-in">
+                <img class="icon" src="icon.png">
+                <div contenteditable="true" class="level"><p>100</p></div>
+                <div contenteditable="true" class="text"><p>1</p></div>
+            </div>
+            <div class="fgo-img-in">
+                <img class="icon" src="icon.png">
+                <div contenteditable="true" class="level"><p>100</p></div>
+                <div contenteditable="true" class="text"><p>1</p></div>
+            </div>
+            <div class="fgo-img-in">
+                <img class="icon" src="icon.png">
+                <div contenteditable="true" class="level"><p>100</p></div>
+                <div contenteditable="true" class="text"><p>1</p></div>
+            </div>
+            <div class="fgo-img-in">
+                <img class="icon" src="icon.png">
+                <div contenteditable="true" class="level"><p>100</p></div>
+                <div contenteditable="true" class="text"><p>1</p></div>
+            </div>
+            <div class="fgo-img-in">
+                <img class="icon" src="icon.png">
+                <div contenteditable="true" class="level"><p>100</p></div>
+                <div contenteditable="true" class="text"><p>1</p></div>
+            </div>
+            <div class="fgo-img-in">
+                <img class="icon" src="icon.png">
+                <div contenteditable="true" class="level"><p>100</p></div>
+                <div contenteditable="true" class="text"><p>1</p></div>
+            </div>
+            <div class="fgo-img-in">
+                <img class="icon" src="icon.png">
+                <div contenteditable="true" class="level"><p>100</p></div>
+                <div contenteditable="true" class="text"><p>1</p></div>
+            </div>
+         <div class="fgo-img1">
+            <img  id="img1" src="" style="width: 100%;height: 100%;margin: auto;opacity:0;">
+        </div>
+        </div>
+        <div class="fgo-top">
+            <img src="cn-andriod-top.png">
+        </div>
+        <div class="fgo-bg">
+            <img src="cn-andriod-bg.png">
+        </div>
+        <div contenteditable="true" class="text-nick">
+            <p>御主名称</p>
+        </div>
+        <div contenteditable="true" class="text-uid">
+            <p>UID</p>
+        </div>
+    </div>
+    <div class="setting">
+        <p>半自动签名档生成器 使用方法：</p>
+        <p>1.在下方选择你的游戏版本</p>
+        <p>2.在下方的输入框内输入你想要添加的立绘图片地址点击上传，也可以不填写，直接点击上传本地图片</p>
+        <p>3.等级、宝具数、昵称、UID可直接点击修改</p>
+        <p>4.真爱图标点一下是关闭，再点一下是显示</p>
+        <p>5.所填数据将保留在本地缓存中，以便下一次打开修改</p>
+        <p>代码作者：陆陆侠 & 二创作者：盗计时</p>
+        <ul>
+            <li><a id="btn1">安卓国服</a><a id="btn2">安卓日服</a><a id="btn3">安卓渠道服</a><a id="btn4">苹果国服</a><a id="btn5">苹果日服</a></li>
+            <li><p>All</p><input type="text"><a id="1" class="upload">上传</a></li>
+            <li><p>Saber</p><input type="text"><a id="2" class="upload">上传</a></li>
+            <li><p>Archer</p><input type="text"><a id="3" class="upload">上传</a></li>
+            <li><p>Lancer</p><input type="text"><a id="4" class="upload">上传</a></li>
+            <li><p>Rider</p><input type="text"><a id="5" class="upload">上传</a></li>
+            <li><p>Caster</p><input type="text"><a id="6" class="upload">上传</a></li>
+            <li><p>Assassin</p><input type="text"><a id="7" class="upload">上传</a></li>
+            <li><p>Berserker</p><input type="text"><a id="8" class="upload">上传</a></li>
+            <li><p>Extra</p><input type="text"><a id="9" class="upload">上传</a></li>
+            <li><p>展示区</p><input type="text"><a id="10" class="uploads">上传</a></li>
+        </ul>
+        <a class="load">点我生成签名档</a>
+        <p class="tip"></p>
+    </div>
+    <input id="file" type="file" style="display:none" onchange="load()">
+    <input id="files" type="file" style="display:none" onchange="load2()">
+</body>
+</html>
